@@ -5,8 +5,7 @@
 def calculate_probabilities(dataset):
     total_count = len(dataset)
     purchase_count = len([x for x in dataset if x["Purchase"] == "Yes"])
-    not_purchase_count = total_count - purchase_count
-
+    
     day_purchase_prob = {}
     discount_purchase_prob = {}
     delivery_purchase_prob = {}
